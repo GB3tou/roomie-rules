@@ -1,0 +1,180 @@
+name: iOS
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "RoomieRules/**"
+      - "RoomieRulesTests/**"
+      - "RoomieRules.xcodeproj/**"
+      - ".github/workflows/**"
+  pull_request:
+    paths:
+      - "RoomieRules/**"
+      - "RoomieRulesTests/**"
+      - "RoomieRules.xcodeproj/**"
+      - ".github/workflows/**"
+  workflow_dispatch:
+
+concurrency:
+  group: ios-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  compilar-y-probar:
+    name: Compilar y probar en simulador
+    runs-on: macos-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Versiones de Xcode y Swift
+        run: |
+          xcodebuild -version
+          swift --version
+
+      - name: Elegir un simulador de iPhone
+        run: |
+          xcrun simctl list --json devices available > simuladores.json
+          python3 - <<'PY' >> "$GITHUB_ENV"
+          import json
+          import re
+          import sys
+
+          with open("simuladores.json") as f:
+              datos = json.load(f)
+
+          candidatos = []
+          for runtime, dispositivos in datos.get("devices", {}).items():
+              m = re.search(r"SimRuntime\.iOS-(\d+)-(\d+)(?:-(\d+))?$", runtime)
+              if not m:
+                  continue
+              version = tuple(int(x or 0) for x in m.groups())
+              for d in dispositivos:
+                  nombre = d.get("name", "")
+                  if not d.get("isAvailable", True) or not nombre.startswith("iPhone"):
+                      continue
+                  # Runtime más reciente primero; dentro de él, preferir modelos que no sean SE.
+                  candidatos.append(((tuple(-v for v in version), "SE" in nombre, nombre), d["udid"], nombre, version))
+
+          if candidatos:
+              candidatos.sort()
+              _, udid, nombre, version = candidatos[0]
+              print("Simulador elegido: %s (iOS %s) %s" % (nombre, ".".join(map(str, version)), udid), file=sys.stderr)
+              print("SIM_UDID=%s" % udid)
+              print("SIM_NOMBRE=%s" % nombre)
+          else:
+              print("No se encontró ningún iPhone disponible.", file=sys.stderr)
+              print("SIM_UDID=")
+          PY
+
+      - name: Compilar y correr pruebas
+        run: |
+          set -o pipefail
+          if [ -n "${SIM_UDID:-}" ]; then
+            echo "Usando simulador: ${SIM_NOMBRE} (${SIM_UDID})"
+            xcodebuild test \
+              -project RoomieRules.xcodeproj \
+              -scheme RoomieRules \
+              -destination "platform=iOS Simulator,id=${SIM_UDID}" \
+              -resultBundlePath "${RUNNER_TEMP}/RoomieRules.xcresult" \
+              2>&1 | tee xcodebuild.log
+          else
+            echo "::warning::No se encontró ningún simulador de iPhone disponible; solo se compila la app (las pruebas NO se ejecutaron)."
+            xcodebuild build \
+              -project RoomieRules.xcodeproj \
+              -scheme RoomieRules \
+              -destination 'generic/platform=iOS Simulator' \
+              CODE_SIGNING_ALLOWED=NO \
+              2>&1 | tee xcodebuild.log
+          fi
+
+      - name: Resumir errores
+        if: failure()
+        run: |
+          python3 - <<'PY'
+          import os
+          import re
+
+          ruta_log = "xcodebuild.log"
+          espacio = os.environ.get("GITHUB_WORKSPACE", "").rstrip("/") + "/"
+          resumen_path = os.environ.get("GITHUB_STEP_SUMMARY")
+
+          if not os.path.exists(ruta_log):
+              lineas = []
+              print("No existe xcodebuild.log: el fallo ocurrió antes de compilar.")
+          else:
+              with open(ruta_log, encoding="utf-8", errors="replace") as f:
+                  lineas = [l.rstrip("\n") for l in f]
+
+          # /ruta/Archivo.swift:LINEA:COL: error: mensaje  (la columna puede faltar en fallos de XCTest)
+          con_ubicacion = re.compile(r"^(/[^:]+):(\d+):(?:(\d+):)?\s*(?:fatal )?error:\s*(.*)$")
+          otros = [
+              re.compile(r":\s*(fatal )?error:"),
+              re.compile(r"^\s*error:"),
+              re.compile(r"XCTAssert\w*.*failed"),
+              re.compile(r"Test Case .* failed"),
+              re.compile(r"Test .* failed after"),
+              re.compile(r"\*\* (BUILD|TEST) FAILED \*\*"),
+              re.compile(r"Testing failed:"),
+          ]
+
+          def escapar_dato(s):
+              return s.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+
+          def escapar_propiedad(s):
+              return escapar_dato(s).replace(":", "%3A").replace(",", "%2C")
+
+          vistos = set()
+          elegidas = []
+          for linea in lineas:
+              texto = linea.strip()
+              if not texto or texto in vistos:
+                  continue
+              m = con_ubicacion.match(texto)
+              if m or any(p.search(texto) for p in otros):
+                  vistos.add(texto)
+                  elegidas.append((texto, m))
+              if len(elegidas) >= 60:
+                  break
+
+          for texto, m in elegidas:
+              if m:
+                  archivo, linea_num, columna, mensaje = m.groups()
+                  if espacio != "/" and archivo.startswith(espacio):
+                      archivo = archivo[len(espacio):]
+                  props = "file=%s,line=%s" % (escapar_propiedad(archivo), linea_num)
+                  if columna:
+                      props += ",col=%s" % columna
+                  print("::error %s::%s" % (props, escapar_dato(mensaje)))
+              else:
+                  print("::error::%s" % escapar_dato(texto))
+
+          if resumen_path:
+              with open(resumen_path, "a", encoding="utf-8") as r:
+                  r.write("## Errores de compilación o de pruebas\n\n")
+                  if elegidas:
+                      cuerpo = [t.replace(espacio, "") if espacio != "/" else t for t, _ in elegidas]
+                  else:
+                      r.write("No se reconocieron líneas de error. Últimas 40 líneas de `xcodebuild.log`:\n\n")
+                      cuerpo = lineas[-40:]
+                  r.write("```text\n")
+                  for t in cuerpo:
+                      r.write(t.replace("```", "'''") + "\n")
+                  r.write("```\n\n")
+                  r.write("El log completo está en el artefacto **xcodebuild-log** de esta ejecución.\n")
+          PY
+
+      - name: Subir xcodebuild.log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcodebuild-log
+          path: xcodebuild.log
+          retention-days: 7
+          if-no-files-found: ignore

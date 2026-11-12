@@ -1,0 +1,882 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BBF93218F39A4EAF010DC3 /* TareasProgresoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519C1C1610A30D2574B278A7 /* TareasProgresoCard.swift */; };
+		0117586228A97CB436EFE638 /* HogarStore+Gastos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E0A41BFA65BD7E3F9FC56 /* HogarStore+Gastos.swift */; };
+		04097C83B061B3679BEF79C1 /* NuevoGastoModo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F0157CA77864BF277E0063 /* NuevoGastoModo.swift */; };
+		053B5AC9F8451122AE92B711 /* SimplificadorDeDeudas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3859E7E0375467BC15CBE38 /* SimplificadorDeDeudas.swift */; };
+		07EEFD0FFEAA8A57CF28A4CD /* TituloSeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48AD9D81028920B74F7194B /* TituloSeccion.swift */; };
+		0AF3057802B1A12C0E931CA6 /* GastosHistorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CD2ADDE6FB7E6F14E1D531 /* GastosHistorialView.swift */; };
+		0FC84377D382FEB1C0E9BEAC /* GastosDeudaFila.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA5191962866A07B0DF201 /* GastosDeudaFila.swift */; };
+		14255F56C0FF888ABE487DBF /* MensajesDeToque.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE2A207EDC459251656CBAB /* MensajesDeToque.swift */; };
+		14FA43384C0C674A89443168 /* InicioRoomiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A580F909BAD9FD99FC84F9ED /* InicioRoomiesView.swift */; };
+		1C9C071B47F2B5FA834D465D /* HogarStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B3DBDF7EDBCF769A956A04 /* HogarStoreTests.swift */; };
+		1E1E07E38E27DF30ED41A00B /* ColorAvatar+Tema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018AC464E398B4D36F268C9A /* ColorAvatar+Tema.swift */; };
+		21EB3990278FAD71392088AB /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5943F099F01BA42BBB1DE23 /* Evento.swift */; };
+		238FC97E5DF1D0B11BD60F96 /* DatosDeEjemplo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B1BE5239E2780059D461C8 /* DatosDeEjemplo.swift */; };
+		29CAB497A41CAC72D0A36466 /* CasillaCircular.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A408A0ABDAF93E6259BDE0 /* CasillaCircular.swift */; };
+		2DA9F6C105179A50DB167820 /* NotificadorLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD04DCAAE79A1F8108257B69 /* NotificadorLocal.swift */; };
+		327D93166F41A0A36A9BC703 /* HogarStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791C7BB6F6435E3B6082004 /* HogarStore.swift */; };
+		335FE0CE7DF94B378E035D70 /* Tipografia.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65B9CAC1F041FE417B78473 /* Tipografia.swift */; };
+		34B650D50A6D734461540EEE /* Dinero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1DB5D6667016688F000C72 /* Dinero.swift */; };
+		34D08A02BDC7B5C7C26D544E /* Formato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B3D36CE57E2E8FC4DB72C /* Formato.swift */; };
+		360EEE9A168DAEF5D2F7E496 /* Tarjeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C621481E433B59D0F302524 /* Tarjeta.swift */; };
+		374CC1B0FCBFABC638850C01 /* CalculadoraDeBalancesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E74591E6A488D158721CBC /* CalculadoraDeBalancesTests.swift */; };
+		39A7CCDB8D3F9889D1105D1B /* GrupoAvataresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F9C1A7998D234440736003 /* GrupoAvataresView.swift */; };
+		3A6DE5863F13DC11BEC71B9D /* AlmacenEnArchivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395FDDA5C6C841B8DC1CA431 /* AlmacenEnArchivo.swift */; };
+		3C50BCD666CA432D2EA5F5C9 /* Transferencia.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B1EE4C62AF9A94BFF323D3 /* Transferencia.swift */; };
+		3F31AD50D075651A2AF92168 /* HogarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ADADBE160A6D7CF3F4DB49 /* HogarView.swift */; };
+		40388D3D69826B3C8BE6A24D /* ArtSuper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A55AD86BB6D9846170B012 /* ArtSuper.swift */; };
+		42F68C944024CAECBF4D0DDF /* Tema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D1292B2BC3328BB173397 /* Tema.swift */; };
+		43E8C2C3BB255B1C9DFA99EF /* Actividad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C022E5CBB0E63A3CD1DE024 /* Actividad.swift */; };
+		4484E3BF8E3D8AFECAFBD534 /* CalculadoraDeBalances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562AB831A06DF5F0F656F22A /* CalculadoraDeBalances.swift */; };
+		46607CDC2303EAA47E2F56DA /* NuevoGastoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB793D77832B44802269B397 /* NuevoGastoView.swift */; };
+		4C6155C093EB3C9DD4CFB5DA /* PantallaDesplazable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19257026228A2994C246AD5 /* PantallaDesplazable.swift */; };
+		554154BBBF5D11E134D73BDA /* InicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851EAE6BAFBF821693B15B9 /* InicioView.swift */; };
+		5621D63BB297E6F15C84C6E5 /* HogarCalendarioCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCB234658A92EB3D22A1856 /* HogarCalendarioCard.swift */; };
+		564B10268E2E1ACFF0F82938 /* InicioTareaFila.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489136984ABF349F718BFFC5 /* InicioTareaFila.swift */; };
+		5D65E921BA3957575B6F8FE1 /* InicioTarjetaBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C20784A90A82D618BE94322 /* InicioTarjetaBalance.swift */; };
+		5F27F99400C6B54542D760D8 /* NotificadorDePrueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = D980406BAC1DD89BC0BC39EC /* NotificadorDePrueba.swift */; };
+		668FA4BC19F338480930A7A4 /* HogarStore+Tareas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CA893C3BF419B4D7243197 /* HogarStore+Tareas.swift */; };
+		6C5A56E5A055793C4D63F4A2 /* HogarListaSuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BD26C0A17892698BAECD9 /* HogarListaSuperView.swift */; };
+		6CD737806FDE4A2D8CC215C6 /* NuevoGastoDivisionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D359C243CF0AE3CBFC3309B /* NuevoGastoDivisionCard.swift */; };
+		6EED9D16B7126AC9DCBBA61F /* Aviso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC9FB1C7A776FF4E47CC02 /* Aviso.swift */; };
+		6FAE65617CFCDCADBAD7874E /* HogarModoComprasCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79287F8CA40B0B7204A2661 /* HogarModoComprasCard.swift */; };
+		733AEFE2C274436006835CC4 /* GastosFila.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9645A6FF1AFCB2C66B2794BD /* GastosFila.swift */; };
+		736F595EF0C152B74EAE9AB5 /* BotonFlotante.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38500451AA6CC73616891858 /* BotonFlotante.swift */; };
+		75EB99DA4A7BFA6360C3CE75 /* IconoCuadrado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110529311FAD6E907076478E /* IconoCuadrado.swift */; };
+		76DE7B74E4ADAA9E04C59070 /* FormatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60961CC2BB6726A0D608B2B1 /* FormatoTests.swift */; };
+		774FFBDB7E2F36801A05C36F /* RotadorDeTareasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028E310AE11FCFF6B5CF74B /* RotadorDeTareasTests.swift */; };
+		7BAB7E4FFED54B58C4D2BABD /* SelectorSegmentado.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2662329D62C0CB513501A8C /* SelectorSegmentado.swift */; };
+		7DF82849C1A7B890D2289BE5 /* Calendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FB417D2D5E47EB30DB1BD1 /* Calendario.swift */; };
+		7F8E690B8A399A8661E4FD93 /* GastosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A946B979A4CC21D269CB1225 /* GastosView.swift */; };
+		8434EB4F75FA6AAE5CC81D96 /* Navegacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F77AC8761A03D2E750502B /* Navegacion.swift */; };
+		8760CCF8B2649224198F1D1A /* TareasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA7EAC0E7F0092D91319E5 /* TareasView.swift */; };
+		8A50C2A66706E2854CBEAE79 /* Pildora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88973C3BC63E3EBF450BEECB /* Pildora.swift */; };
+		92F8F10B06C07867A7067DE9 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779228C2EFBF429AF41217E4 /* AvatarView.swift */; };
+		96A787DE3CBA114D2D1E4AD5 /* HogarNuevoEventoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524615AE872AAB65CA27680E /* HogarNuevoEventoView.swift */; };
+		9ACC2D170C04D33973A042B5 /* RoomieRulesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984DB52CF7E9D403F8ED338 /* RoomieRulesApp.swift */; };
+		9F450F66B247FE39315A192A /* EstadoHogar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DA3672D22DF87148F12508 /* EstadoHogar.swift */; };
+		9FD8A3C2927BD3DB0BF3F79C /* EstiloGasto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5561DA4BB6E5D20889C0771C /* EstiloGasto.swift */; };
+		A28ABAD54ADDD2E6C758C9A7 /* EstilosDeBoton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8E440EA42EA2197839EEF1 /* EstilosDeBoton.swift */; };
+		A49F467F68B22959F25349AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16EFEB54C73947D21D7CCDFE /* Assets.xcassets */; };
+		A94E76406C08F6C2581C242B /* HogarEventoFila.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FF98A1CA6247EF40EFA4F0 /* HogarEventoFila.swift */; };
+		B04E1732402006F4814B9BE8 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D7D5D9F3AD18E1AA1415F /* Color+Hex.swift */; };
+		B1D5E2BB729F3243FACBE3B0 /* GastosDeudasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD706CC1561066338F43D4E /* GastosDeudasView.swift */; };
+		B33DBA696C1732AD2A854BE3 /* SimplificadorDeDeudasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B4C528E4EE9F859CC4FD49 /* SimplificadorDeDeudasTests.swift */; };
+		BE52A15345B492FB40EA2099 /* HogarStore+Hogar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4AD72904D0DE89784FED5 /* HogarStore+Hogar.swift */; };
+		C060439A383321333FC3CAE6 /* TareasFila.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6169A184C28446B193EBD5E2 /* TareasFila.swift */; };
+		CDD363794C3C4E598F651873 /* AlmacenDeEstado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBDFC0A73625D8018380B5E /* AlmacenDeEstado.swift */; };
+		D13817E9C4BE5C5331A2356B /* HogarStore+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E26B1B7554B427FC3DA1A0 /* HogarStore+Demo.swift */; };
+		D3663DF8940357DFA878A210 /* TareasBotonToque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6AA41FA00F6FCAB7C04525 /* TareasBotonToque.swift */; };
+		D4B81C3D7324EE1E4AE84F3F /* ModoCompras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5758FDF3B4403B0242151D49 /* ModoCompras.swift */; };
+		D80D382439D86A323B3D2F08 /* InicioActividadFila.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33633FB7710A5A766AC2030 /* InicioActividadFila.swift */; };
+		D91E72F4F35435E3012695A1 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B781D9373CBB3929EAD2510 /* Usuario.swift */; };
+		DA565925F3633F8C9AD2EBAB /* Tarea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3FC9202171F32779B4523 /* Tarea.swift */; };
+		DB472ADF1B1A3D84F6E77A45 /* ChipSeleccionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A360E920A778A8DDEE752 /* ChipSeleccionable.swift */; };
+		E18307AEFFF32639241BD71E /* AlmacenEnMemoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE36F3365C616C69384A62 /* AlmacenEnMemoria.swift */; };
+		E34D59470D147C59FAF76C3F /* Gasto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7409320B0ED2F563CC8DB79A /* Gasto.swift */; };
+		E6241B0F12718378F3E98E7E /* GastosBalancesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85881029F99D64A868EC7A04 /* GastosBalancesCard.swift */; };
+		E755D0157AE36B4793C648CB /* IconoGasto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247835F50556FE7D44B9DE7 /* IconoGasto.swift */; };
+		EA6AEB23D2D05F681B17810E /* VistaPrincipal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0056AE0B3F37621845C922 /* VistaPrincipal.swift */; };
+		EAD5D2D506766A3B2CB0316F /* Notificador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAB7AB2550A627C657CEDEC /* Notificador.swift */; };
+		EDABCF2BE91725A6995DF7B1 /* CasillaCuadrada.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0881BDAE2167FBC2BD775212 /* CasillaCuadrada.swift */; };
+		F27B23D9223AFFE4D825B438 /* EncabezadoPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8B99AF0DF9A9667E3D4055 /* EncabezadoPantalla.swift */; };
+		F4102E1145282B22EE870C65 /* NuevoGastoPagadorSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC50DB962B88DEEB0FA467B7 /* NuevoGastoPagadorSelector.swift */; };
+		FA5047BAC307979340077B8A /* EstadoVacio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D4F69554F253AF0EFF5B7C /* EstadoVacio.swift */; };
+		FBD610644F974F13B3D737AC /* HogarArticuloFila.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5788BD74D47EEB207BF85 /* HogarArticuloFila.swift */; };
+		FBE596958726146683E6559E /* RotadorDeTareas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07D0FB1C3FFC1828B989C5 /* RotadorDeTareas.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43C6A806D74056DD65A862B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A49B116DC6F12499F6F6CDCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D56D7FB698E7AEAB675FE861;
+			remoteInfo = RoomieRules;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0028E310AE11FCFF6B5CF74B /* RotadorDeTareasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotadorDeTareasTests.swift; sourceTree = "<group>"; };
+		00F77AC8761A03D2E750502B /* Navegacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navegacion.swift; sourceTree = "<group>"; };
+		018AC464E398B4D36F268C9A /* ColorAvatar+Tema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorAvatar+Tema.swift"; sourceTree = "<group>"; };
+		0881BDAE2167FBC2BD775212 /* CasillaCuadrada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasillaCuadrada.swift; sourceTree = "<group>"; };
+		0A8E0A41BFA65BD7E3F9FC56 /* HogarStore+Gastos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HogarStore+Gastos.swift"; sourceTree = "<group>"; };
+		110529311FAD6E907076478E /* IconoCuadrado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconoCuadrado.swift; sourceTree = "<group>"; };
+		16D4F69554F253AF0EFF5B7C /* EstadoVacio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstadoVacio.swift; sourceTree = "<group>"; };
+		16EFEB54C73947D21D7CCDFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1984DB52CF7E9D403F8ED338 /* RoomieRulesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomieRulesApp.swift; sourceTree = "<group>"; };
+		19E5D639C093370F55CFDC6A /* RoomieRules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomieRules.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C1DB5D6667016688F000C72 /* Dinero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinero.swift; sourceTree = "<group>"; };
+		2B6AA41FA00F6FCAB7C04525 /* TareasBotonToque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareasBotonToque.swift; sourceTree = "<group>"; };
+		2D5D7D5D9F3AD18E1AA1415F /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		3247835F50556FE7D44B9DE7 /* IconoGasto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconoGasto.swift; sourceTree = "<group>"; };
+		38500451AA6CC73616891858 /* BotonFlotante.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotonFlotante.swift; sourceTree = "<group>"; };
+		395FDDA5C6C841B8DC1CA431 /* AlmacenEnArchivo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmacenEnArchivo.swift; sourceTree = "<group>"; };
+		3BDA7EAC0E7F0092D91319E5 /* TareasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareasView.swift; sourceTree = "<group>"; };
+		3C022E5CBB0E63A3CD1DE024 /* Actividad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actividad.swift; sourceTree = "<group>"; };
+		41CA893C3BF419B4D7243197 /* HogarStore+Tareas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HogarStore+Tareas.swift"; sourceTree = "<group>"; };
+		47DA3672D22DF87148F12508 /* EstadoHogar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstadoHogar.swift; sourceTree = "<group>"; };
+		489136984ABF349F718BFFC5 /* InicioTareaFila.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioTareaFila.swift; sourceTree = "<group>"; };
+		49A55AD86BB6D9846170B012 /* ArtSuper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtSuper.swift; sourceTree = "<group>"; };
+		4B781D9373CBB3929EAD2510 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		4D359C243CF0AE3CBFC3309B /* NuevoGastoDivisionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoGastoDivisionCard.swift; sourceTree = "<group>"; };
+		4EC4AD72904D0DE89784FED5 /* HogarStore+Hogar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HogarStore+Hogar.swift"; sourceTree = "<group>"; };
+		519C1C1610A30D2574B278A7 /* TareasProgresoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareasProgresoCard.swift; sourceTree = "<group>"; };
+		51AA5191962866A07B0DF201 /* GastosDeudaFila.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GastosDeudaFila.swift; sourceTree = "<group>"; };
+		524615AE872AAB65CA27680E /* HogarNuevoEventoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogarNuevoEventoView.swift; sourceTree = "<group>"; };
+		54BC2B0B47979529399F431E /* RoomieRulesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoomieRulesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5561DA4BB6E5D20889C0771C /* EstiloGasto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloGasto.swift; sourceTree = "<group>"; };
+		562AB831A06DF5F0F656F22A /* CalculadoraDeBalances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraDeBalances.swift; sourceTree = "<group>"; };
+		5758FDF3B4403B0242151D49 /* ModoCompras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModoCompras.swift; sourceTree = "<group>"; };
+		5DBDFC0A73625D8018380B5E /* AlmacenDeEstado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmacenDeEstado.swift; sourceTree = "<group>"; };
+		60961CC2BB6726A0D608B2B1 /* FormatoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatoTests.swift; sourceTree = "<group>"; };
+		6169A184C28446B193EBD5E2 /* TareasFila.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareasFila.swift; sourceTree = "<group>"; };
+		652D1292B2BC3328BB173397 /* Tema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema.swift; sourceTree = "<group>"; };
+		657B3D36CE57E2E8FC4DB72C /* Formato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formato.swift; sourceTree = "<group>"; };
+		67AE36F3365C616C69384A62 /* AlmacenEnMemoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlmacenEnMemoria.swift; sourceTree = "<group>"; };
+		6AAB7AB2550A627C657CEDEC /* Notificador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificador.swift; sourceTree = "<group>"; };
+		6BCB234658A92EB3D22A1856 /* HogarCalendarioCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogarCalendarioCard.swift; sourceTree = "<group>"; };
+		7409320B0ED2F563CC8DB79A /* Gasto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gasto.swift; sourceTree = "<group>"; };
+		779228C2EFBF429AF41217E4 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		7B07D0FB1C3FFC1828B989C5 /* RotadorDeTareas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotadorDeTareas.swift; sourceTree = "<group>"; };
+		7C20784A90A82D618BE94322 /* InicioTarjetaBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioTarjetaBalance.swift; sourceTree = "<group>"; };
+		7C621481E433B59D0F302524 /* Tarjeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarjeta.swift; sourceTree = "<group>"; };
+		7CA3FC9202171F32779B4523 /* Tarea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarea.swift; sourceTree = "<group>"; };
+		835BD26C0A17892698BAECD9 /* HogarListaSuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogarListaSuperView.swift; sourceTree = "<group>"; };
+		85881029F99D64A868EC7A04 /* GastosBalancesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GastosBalancesCard.swift; sourceTree = "<group>"; };
+		8851EAE6BAFBF821693B15B9 /* InicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioView.swift; sourceTree = "<group>"; };
+		88973C3BC63E3EBF450BEECB /* Pildora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pildora.swift; sourceTree = "<group>"; };
+		88DC9FB1C7A776FF4E47CC02 /* Aviso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aviso.swift; sourceTree = "<group>"; };
+		89E26B1B7554B427FC3DA1A0 /* HogarStore+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HogarStore+Demo.swift"; sourceTree = "<group>"; };
+		89FF98A1CA6247EF40EFA4F0 /* HogarEventoFila.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogarEventoFila.swift; sourceTree = "<group>"; };
+		9645A6FF1AFCB2C66B2794BD /* GastosFila.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GastosFila.swift; sourceTree = "<group>"; };
+		9791C7BB6F6435E3B6082004 /* HogarStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogarStore.swift; sourceTree = "<group>"; };
+		97FB417D2D5E47EB30DB1BD1 /* Calendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendario.swift; sourceTree = "<group>"; };
+		A580F909BAD9FD99FC84F9ED /* InicioRoomiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioRoomiesView.swift; sourceTree = "<group>"; };
+		A5ADADBE160A6D7CF3F4DB49 /* HogarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogarView.swift; sourceTree = "<group>"; };
+		A79287F8CA40B0B7204A2661 /* HogarModoComprasCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogarModoComprasCard.swift; sourceTree = "<group>"; };
+		A946B979A4CC21D269CB1225 /* GastosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GastosView.swift; sourceTree = "<group>"; };
+		AB8B99AF0DF9A9667E3D4055 /* EncabezadoPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncabezadoPantalla.swift; sourceTree = "<group>"; };
+		AF7A360E920A778A8DDEE752 /* ChipSeleccionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipSeleccionable.swift; sourceTree = "<group>"; };
+		B3859E7E0375467BC15CBE38 /* SimplificadorDeDeudas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplificadorDeDeudas.swift; sourceTree = "<group>"; };
+		B48AD9D81028920B74F7194B /* TituloSeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TituloSeccion.swift; sourceTree = "<group>"; };
+		BCD706CC1561066338F43D4E /* GastosDeudasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GastosDeudasView.swift; sourceTree = "<group>"; };
+		C2662329D62C0CB513501A8C /* SelectorSegmentado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorSegmentado.swift; sourceTree = "<group>"; };
+		C2A408A0ABDAF93E6259BDE0 /* CasillaCircular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasillaCircular.swift; sourceTree = "<group>"; };
+		C3F9C1A7998D234440736003 /* GrupoAvataresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrupoAvataresView.swift; sourceTree = "<group>"; };
+		C4E74591E6A488D158721CBC /* CalculadoraDeBalancesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraDeBalancesTests.swift; sourceTree = "<group>"; };
+		CB793D77832B44802269B397 /* NuevoGastoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoGastoView.swift; sourceTree = "<group>"; };
+		D19257026228A2994C246AD5 /* PantallaDesplazable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaDesplazable.swift; sourceTree = "<group>"; };
+		D5943F099F01BA42BBB1DE23 /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
+		D6B4C528E4EE9F859CC4FD49 /* SimplificadorDeDeudasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplificadorDeDeudasTests.swift; sourceTree = "<group>"; };
+		D6F0157CA77864BF277E0063 /* NuevoGastoModo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoGastoModo.swift; sourceTree = "<group>"; };
+		D8B1BE5239E2780059D461C8 /* DatosDeEjemplo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosDeEjemplo.swift; sourceTree = "<group>"; };
+		D980406BAC1DD89BC0BC39EC /* NotificadorDePrueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificadorDePrueba.swift; sourceTree = "<group>"; };
+		DD04DCAAE79A1F8108257B69 /* NotificadorLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificadorLocal.swift; sourceTree = "<group>"; };
+		DF8E440EA42EA2197839EEF1 /* EstilosDeBoton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstilosDeBoton.swift; sourceTree = "<group>"; };
+		E33633FB7710A5A766AC2030 /* InicioActividadFila.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioActividadFila.swift; sourceTree = "<group>"; };
+		E4B1EE4C62AF9A94BFF323D3 /* Transferencia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transferencia.swift; sourceTree = "<group>"; };
+		E6B3DBDF7EDBCF769A956A04 /* HogarStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogarStoreTests.swift; sourceTree = "<group>"; };
+		EAE2A207EDC459251656CBAB /* MensajesDeToque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensajesDeToque.swift; sourceTree = "<group>"; };
+		EB0056AE0B3F37621845C922 /* VistaPrincipal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaPrincipal.swift; sourceTree = "<group>"; };
+		F3F5788BD74D47EEB207BF85 /* HogarArticuloFila.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogarArticuloFila.swift; sourceTree = "<group>"; };
+		F65B9CAC1F041FE417B78473 /* Tipografia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tipografia.swift; sourceTree = "<group>"; };
+		F9CD2ADDE6FB7E6F14E1D531 /* GastosHistorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GastosHistorialView.swift; sourceTree = "<group>"; };
+		FC50DB962B88DEEB0FA467B7 /* NuevoGastoPagadorSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoGastoPagadorSelector.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7220AA488FAF629C72FC5AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E979C8FD76F2B535F0F7BDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0716A14A1E5B9577CC239DDB /* Pantallas */ = {
+			isa = PBXGroup;
+			children = (
+				EB3DB0AFD3415C74F99C75B7 /* Gastos */,
+				AC22C9138475180DAFBE3012 /* Hogar */,
+				9007157EED7FFD1D34A98206 /* Inicio */,
+				9D70C0F38328C42B2CBD4651 /* Tareas */,
+			);
+			path = Pantallas;
+			sourceTree = "<group>";
+		};
+		151F591F041D283D8E795294 /* RoomieRules */ = {
+			isa = PBXGroup;
+			children = (
+				2CC4B3FB58C057D537244EF2 /* App */,
+				16320903DB7037EA5CE396CD /* Componentes */,
+				47C147046A9D6ADE8BB25DD4 /* Datos */,
+				ADBAF1B864A9EE84F2478629 /* Logica */,
+				2878149C7D380C050D0B09AA /* Modelos */,
+				0716A14A1E5B9577CC239DDB /* Pantallas */,
+				2CB09D11D9E4AE4C47A43E27 /* Servicios */,
+				D9530A1D708AD39DEF20902A /* Tema */,
+				E59FD8F9EE43090BA5C8E704 /* Utilidades */,
+				16EFEB54C73947D21D7CCDFE /* Assets.xcassets */,
+			);
+			path = RoomieRules;
+			sourceTree = "<group>";
+		};
+		16320903DB7037EA5CE396CD /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				779228C2EFBF429AF41217E4 /* AvatarView.swift */,
+				88DC9FB1C7A776FF4E47CC02 /* Aviso.swift */,
+				38500451AA6CC73616891858 /* BotonFlotante.swift */,
+				C2A408A0ABDAF93E6259BDE0 /* CasillaCircular.swift */,
+				0881BDAE2167FBC2BD775212 /* CasillaCuadrada.swift */,
+				AF7A360E920A778A8DDEE752 /* ChipSeleccionable.swift */,
+				AB8B99AF0DF9A9667E3D4055 /* EncabezadoPantalla.swift */,
+				16D4F69554F253AF0EFF5B7C /* EstadoVacio.swift */,
+				5561DA4BB6E5D20889C0771C /* EstiloGasto.swift */,
+				DF8E440EA42EA2197839EEF1 /* EstilosDeBoton.swift */,
+				C3F9C1A7998D234440736003 /* GrupoAvataresView.swift */,
+				110529311FAD6E907076478E /* IconoCuadrado.swift */,
+				3247835F50556FE7D44B9DE7 /* IconoGasto.swift */,
+				D19257026228A2994C246AD5 /* PantallaDesplazable.swift */,
+				88973C3BC63E3EBF450BEECB /* Pildora.swift */,
+				C2662329D62C0CB513501A8C /* SelectorSegmentado.swift */,
+				7C621481E433B59D0F302524 /* Tarjeta.swift */,
+				B48AD9D81028920B74F7194B /* TituloSeccion.swift */,
+			);
+			path = Componentes;
+			sourceTree = "<group>";
+		};
+		2878149C7D380C050D0B09AA /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				3C022E5CBB0E63A3CD1DE024 /* Actividad.swift */,
+				49A55AD86BB6D9846170B012 /* ArtSuper.swift */,
+				47DA3672D22DF87148F12508 /* EstadoHogar.swift */,
+				D5943F099F01BA42BBB1DE23 /* Evento.swift */,
+				7409320B0ED2F563CC8DB79A /* Gasto.swift */,
+				5758FDF3B4403B0242151D49 /* ModoCompras.swift */,
+				7CA3FC9202171F32779B4523 /* Tarea.swift */,
+				E4B1EE4C62AF9A94BFF323D3 /* Transferencia.swift */,
+				4B781D9373CBB3929EAD2510 /* Usuario.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		2CB09D11D9E4AE4C47A43E27 /* Servicios */ = {
+			isa = PBXGroup;
+			children = (
+				5DBDFC0A73625D8018380B5E /* AlmacenDeEstado.swift */,
+				395FDDA5C6C841B8DC1CA431 /* AlmacenEnArchivo.swift */,
+				67AE36F3365C616C69384A62 /* AlmacenEnMemoria.swift */,
+				EAE2A207EDC459251656CBAB /* MensajesDeToque.swift */,
+				6AAB7AB2550A627C657CEDEC /* Notificador.swift */,
+				D980406BAC1DD89BC0BC39EC /* NotificadorDePrueba.swift */,
+				DD04DCAAE79A1F8108257B69 /* NotificadorLocal.swift */,
+			);
+			path = Servicios;
+			sourceTree = "<group>";
+		};
+		2CC4B3FB58C057D537244EF2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				00F77AC8761A03D2E750502B /* Navegacion.swift */,
+				1984DB52CF7E9D403F8ED338 /* RoomieRulesApp.swift */,
+				EB0056AE0B3F37621845C922 /* VistaPrincipal.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2F3A6B1E78F896718625FF06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19E5D639C093370F55CFDC6A /* RoomieRules.app */,
+				54BC2B0B47979529399F431E /* RoomieRulesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47C147046A9D6ADE8BB25DD4 /* Datos */ = {
+			isa = PBXGroup;
+			children = (
+				D8B1BE5239E2780059D461C8 /* DatosDeEjemplo.swift */,
+				89E26B1B7554B427FC3DA1A0 /* HogarStore+Demo.swift */,
+				0A8E0A41BFA65BD7E3F9FC56 /* HogarStore+Gastos.swift */,
+				4EC4AD72904D0DE89784FED5 /* HogarStore+Hogar.swift */,
+				41CA893C3BF419B4D7243197 /* HogarStore+Tareas.swift */,
+				9791C7BB6F6435E3B6082004 /* HogarStore.swift */,
+			);
+			path = Datos;
+			sourceTree = "<group>";
+		};
+		6446A78F39099159BAEF5045 /* RoomieRulesTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4E74591E6A488D158721CBC /* CalculadoraDeBalancesTests.swift */,
+				60961CC2BB6726A0D608B2B1 /* FormatoTests.swift */,
+				E6B3DBDF7EDBCF769A956A04 /* HogarStoreTests.swift */,
+				0028E310AE11FCFF6B5CF74B /* RotadorDeTareasTests.swift */,
+				D6B4C528E4EE9F859CC4FD49 /* SimplificadorDeDeudasTests.swift */,
+			);
+			path = RoomieRulesTests;
+			sourceTree = "<group>";
+		};
+		9007157EED7FFD1D34A98206 /* Inicio */ = {
+			isa = PBXGroup;
+			children = (
+				E33633FB7710A5A766AC2030 /* InicioActividadFila.swift */,
+				A580F909BAD9FD99FC84F9ED /* InicioRoomiesView.swift */,
+				489136984ABF349F718BFFC5 /* InicioTareaFila.swift */,
+				7C20784A90A82D618BE94322 /* InicioTarjetaBalance.swift */,
+				8851EAE6BAFBF821693B15B9 /* InicioView.swift */,
+			);
+			path = Inicio;
+			sourceTree = "<group>";
+		};
+		9D70C0F38328C42B2CBD4651 /* Tareas */ = {
+			isa = PBXGroup;
+			children = (
+				2B6AA41FA00F6FCAB7C04525 /* TareasBotonToque.swift */,
+				6169A184C28446B193EBD5E2 /* TareasFila.swift */,
+				519C1C1610A30D2574B278A7 /* TareasProgresoCard.swift */,
+				3BDA7EAC0E7F0092D91319E5 /* TareasView.swift */,
+			);
+			path = Tareas;
+			sourceTree = "<group>";
+		};
+		AC22C9138475180DAFBE3012 /* Hogar */ = {
+			isa = PBXGroup;
+			children = (
+				F3F5788BD74D47EEB207BF85 /* HogarArticuloFila.swift */,
+				6BCB234658A92EB3D22A1856 /* HogarCalendarioCard.swift */,
+				89FF98A1CA6247EF40EFA4F0 /* HogarEventoFila.swift */,
+				835BD26C0A17892698BAECD9 /* HogarListaSuperView.swift */,
+				A79287F8CA40B0B7204A2661 /* HogarModoComprasCard.swift */,
+				524615AE872AAB65CA27680E /* HogarNuevoEventoView.swift */,
+				A5ADADBE160A6D7CF3F4DB49 /* HogarView.swift */,
+			);
+			path = Hogar;
+			sourceTree = "<group>";
+		};
+		ADBAF1B864A9EE84F2478629 /* Logica */ = {
+			isa = PBXGroup;
+			children = (
+				562AB831A06DF5F0F656F22A /* CalculadoraDeBalances.swift */,
+				1C1DB5D6667016688F000C72 /* Dinero.swift */,
+				7B07D0FB1C3FFC1828B989C5 /* RotadorDeTareas.swift */,
+				B3859E7E0375467BC15CBE38 /* SimplificadorDeDeudas.swift */,
+			);
+			path = Logica;
+			sourceTree = "<group>";
+		};
+		BB5D8E872B7D45C0EFD70B64 = {
+			isa = PBXGroup;
+			children = (
+				151F591F041D283D8E795294 /* RoomieRules */,
+				6446A78F39099159BAEF5045 /* RoomieRulesTests */,
+				2F3A6B1E78F896718625FF06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9530A1D708AD39DEF20902A /* Tema */ = {
+			isa = PBXGroup;
+			children = (
+				2D5D7D5D9F3AD18E1AA1415F /* Color+Hex.swift */,
+				018AC464E398B4D36F268C9A /* ColorAvatar+Tema.swift */,
+				652D1292B2BC3328BB173397 /* Tema.swift */,
+				F65B9CAC1F041FE417B78473 /* Tipografia.swift */,
+			);
+			path = Tema;
+			sourceTree = "<group>";
+		};
+		E59FD8F9EE43090BA5C8E704 /* Utilidades */ = {
+			isa = PBXGroup;
+			children = (
+				97FB417D2D5E47EB30DB1BD1 /* Calendario.swift */,
+				657B3D36CE57E2E8FC4DB72C /* Formato.swift */,
+			);
+			path = Utilidades;
+			sourceTree = "<group>";
+		};
+		EB3DB0AFD3415C74F99C75B7 /* Gastos */ = {
+			isa = PBXGroup;
+			children = (
+				85881029F99D64A868EC7A04 /* GastosBalancesCard.swift */,
+				51AA5191962866A07B0DF201 /* GastosDeudaFila.swift */,
+				BCD706CC1561066338F43D4E /* GastosDeudasView.swift */,
+				9645A6FF1AFCB2C66B2794BD /* GastosFila.swift */,
+				F9CD2ADDE6FB7E6F14E1D531 /* GastosHistorialView.swift */,
+				A946B979A4CC21D269CB1225 /* GastosView.swift */,
+				4D359C243CF0AE3CBFC3309B /* NuevoGastoDivisionCard.swift */,
+				D6F0157CA77864BF277E0063 /* NuevoGastoModo.swift */,
+				FC50DB962B88DEEB0FA467B7 /* NuevoGastoPagadorSelector.swift */,
+				CB793D77832B44802269B397 /* NuevoGastoView.swift */,
+			);
+			path = Gastos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A14EE8811111CEF7637AE97A /* RoomieRulesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56E03D17FAE325E28D4A421B /* Build configuration list for PBXNativeTarget "RoomieRulesTests" */;
+			buildPhases = (
+				0C3A90EEDE87B446EED81FBD /* Sources */,
+				9E979C8FD76F2B535F0F7BDA /* Frameworks */,
+				4A81865BC6256EE5944D4A39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FED5CB284EE89F5EF112D4C0 /* PBXTargetDependency */,
+			);
+			name = RoomieRulesTests;
+			productName = RoomieRulesTests;
+			productReference = 54BC2B0B47979529399F431E /* RoomieRulesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D56D7FB698E7AEAB675FE861 /* RoomieRules */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4195C8E0F6B4E458BD6B1A /* Build configuration list for PBXNativeTarget "RoomieRules" */;
+			buildPhases = (
+				E6C187EB125A9663DDDBEEFF /* Sources */,
+				7220AA488FAF629C72FC5AFA /* Frameworks */,
+				86A8D5E3C9980E5CF2BDA632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoomieRules;
+			productName = RoomieRules;
+			productReference = 19E5D639C093370F55CFDC6A /* RoomieRules.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A49B116DC6F12499F6F6CDCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D56D7FB698E7AEAB675FE861 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A14EE8811111CEF7637AE97A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = D56D7FB698E7AEAB675FE861;
+					};
+				};
+			};
+			buildConfigurationList = 1F4E3D13C2320EDA50221924 /* Build configuration list for PBXProject "RoomieRules" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = es;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				es,
+				Base,
+			);
+			mainGroup = BB5D8E872B7D45C0EFD70B64;
+			productRefGroup = 2F3A6B1E78F896718625FF06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D56D7FB698E7AEAB675FE861 /* RoomieRules */,
+				A14EE8811111CEF7637AE97A /* RoomieRulesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A81865BC6256EE5944D4A39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A8D5E3C9980E5CF2BDA632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A49F467F68B22959F25349AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C3A90EEDE87B446EED81FBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				374CC1B0FCBFABC638850C01 /* CalculadoraDeBalancesTests.swift in Sources */,
+				76DE7B74E4ADAA9E04C59070 /* FormatoTests.swift in Sources */,
+				1C9C071B47F2B5FA834D465D /* HogarStoreTests.swift in Sources */,
+				774FFBDB7E2F36801A05C36F /* RotadorDeTareasTests.swift in Sources */,
+				B33DBA696C1732AD2A854BE3 /* SimplificadorDeDeudasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C187EB125A9663DDDBEEFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8434EB4F75FA6AAE5CC81D96 /* Navegacion.swift in Sources */,
+				9ACC2D170C04D33973A042B5 /* RoomieRulesApp.swift in Sources */,
+				EA6AEB23D2D05F681B17810E /* VistaPrincipal.swift in Sources */,
+				92F8F10B06C07867A7067DE9 /* AvatarView.swift in Sources */,
+				6EED9D16B7126AC9DCBBA61F /* Aviso.swift in Sources */,
+				736F595EF0C152B74EAE9AB5 /* BotonFlotante.swift in Sources */,
+				29CAB497A41CAC72D0A36466 /* CasillaCircular.swift in Sources */,
+				EDABCF2BE91725A6995DF7B1 /* CasillaCuadrada.swift in Sources */,
+				DB472ADF1B1A3D84F6E77A45 /* ChipSeleccionable.swift in Sources */,
+				F27B23D9223AFFE4D825B438 /* EncabezadoPantalla.swift in Sources */,
+				FA5047BAC307979340077B8A /* EstadoVacio.swift in Sources */,
+				9FD8A3C2927BD3DB0BF3F79C /* EstiloGasto.swift in Sources */,
+				A28ABAD54ADDD2E6C758C9A7 /* EstilosDeBoton.swift in Sources */,
+				39A7CCDB8D3F9889D1105D1B /* GrupoAvataresView.swift in Sources */,
+				75EB99DA4A7BFA6360C3CE75 /* IconoCuadrado.swift in Sources */,
+				E755D0157AE36B4793C648CB /* IconoGasto.swift in Sources */,
+				4C6155C093EB3C9DD4CFB5DA /* PantallaDesplazable.swift in Sources */,
+				8A50C2A66706E2854CBEAE79 /* Pildora.swift in Sources */,
+				7BAB7E4FFED54B58C4D2BABD /* SelectorSegmentado.swift in Sources */,
+				360EEE9A168DAEF5D2F7E496 /* Tarjeta.swift in Sources */,
+				07EEFD0FFEAA8A57CF28A4CD /* TituloSeccion.swift in Sources */,
+				238FC97E5DF1D0B11BD60F96 /* DatosDeEjemplo.swift in Sources */,
+				D13817E9C4BE5C5331A2356B /* HogarStore+Demo.swift in Sources */,
+				0117586228A97CB436EFE638 /* HogarStore+Gastos.swift in Sources */,
+				BE52A15345B492FB40EA2099 /* HogarStore+Hogar.swift in Sources */,
+				668FA4BC19F338480930A7A4 /* HogarStore+Tareas.swift in Sources */,
+				327D93166F41A0A36A9BC703 /* HogarStore.swift in Sources */,
+				4484E3BF8E3D8AFECAFBD534 /* CalculadoraDeBalances.swift in Sources */,
+				34B650D50A6D734461540EEE /* Dinero.swift in Sources */,
+				FBE596958726146683E6559E /* RotadorDeTareas.swift in Sources */,
+				053B5AC9F8451122AE92B711 /* SimplificadorDeDeudas.swift in Sources */,
+				43E8C2C3BB255B1C9DFA99EF /* Actividad.swift in Sources */,
+				40388D3D69826B3C8BE6A24D /* ArtSuper.swift in Sources */,
+				9F450F66B247FE39315A192A /* EstadoHogar.swift in Sources */,
+				21EB3990278FAD71392088AB /* Evento.swift in Sources */,
+				E34D59470D147C59FAF76C3F /* Gasto.swift in Sources */,
+				D4B81C3D7324EE1E4AE84F3F /* ModoCompras.swift in Sources */,
+				DA565925F3633F8C9AD2EBAB /* Tarea.swift in Sources */,
+				3C50BCD666CA432D2EA5F5C9 /* Transferencia.swift in Sources */,
+				D91E72F4F35435E3012695A1 /* Usuario.swift in Sources */,
+				E6241B0F12718378F3E98E7E /* GastosBalancesCard.swift in Sources */,
+				0FC84377D382FEB1C0E9BEAC /* GastosDeudaFila.swift in Sources */,
+				B1D5E2BB729F3243FACBE3B0 /* GastosDeudasView.swift in Sources */,
+				733AEFE2C274436006835CC4 /* GastosFila.swift in Sources */,
+				0AF3057802B1A12C0E931CA6 /* GastosHistorialView.swift in Sources */,
+				7F8E690B8A399A8661E4FD93 /* GastosView.swift in Sources */,
+				6CD737806FDE4A2D8CC215C6 /* NuevoGastoDivisionCard.swift in Sources */,
+				04097C83B061B3679BEF79C1 /* NuevoGastoModo.swift in Sources */,
+				F4102E1145282B22EE870C65 /* NuevoGastoPagadorSelector.swift in Sources */,
+				46607CDC2303EAA47E2F56DA /* NuevoGastoView.swift in Sources */,
+				FBD610644F974F13B3D737AC /* HogarArticuloFila.swift in Sources */,
+				5621D63BB297E6F15C84C6E5 /* HogarCalendarioCard.swift in Sources */,
+				A94E76406C08F6C2581C242B /* HogarEventoFila.swift in Sources */,
+				6C5A56E5A055793C4D63F4A2 /* HogarListaSuperView.swift in Sources */,
+				6FAE65617CFCDCADBAD7874E /* HogarModoComprasCard.swift in Sources */,
+				96A787DE3CBA114D2D1E4AD5 /* HogarNuevoEventoView.swift in Sources */,
+				3F31AD50D075651A2AF92168 /* HogarView.swift in Sources */,
+				D80D382439D86A323B3D2F08 /* InicioActividadFila.swift in Sources */,
+				14FA43384C0C674A89443168 /* InicioRoomiesView.swift in Sources */,
+				564B10268E2E1ACFF0F82938 /* InicioTareaFila.swift in Sources */,
+				5D65E921BA3957575B6F8FE1 /* InicioTarjetaBalance.swift in Sources */,
+				554154BBBF5D11E134D73BDA /* InicioView.swift in Sources */,
+				D3663DF8940357DFA878A210 /* TareasBotonToque.swift in Sources */,
+				C060439A383321333FC3CAE6 /* TareasFila.swift in Sources */,
+				00BBF93218F39A4EAF010DC3 /* TareasProgresoCard.swift in Sources */,
+				8760CCF8B2649224198F1D1A /* TareasView.swift in Sources */,
+				CDD363794C3C4E598F651873 /* AlmacenDeEstado.swift in Sources */,
+				3A6DE5863F13DC11BEC71B9D /* AlmacenEnArchivo.swift in Sources */,
+				E18307AEFFF32639241BD71E /* AlmacenEnMemoria.swift in Sources */,
+				14255F56C0FF888ABE487DBF /* MensajesDeToque.swift in Sources */,
+				EAD5D2D506766A3B2CB0316F /* Notificador.swift in Sources */,
+				5F27F99400C6B54542D760D8 /* NotificadorDePrueba.swift in Sources */,
+				2DA9F6C105179A50DB167820 /* NotificadorLocal.swift in Sources */,
+				B04E1732402006F4814B9BE8 /* Color+Hex.swift in Sources */,
+				1E1E07E38E27DF30ED41A00B /* ColorAvatar+Tema.swift in Sources */,
+				42F68C944024CAECBF4D0DDF /* Tema.swift in Sources */,
+				335FE0CE7DF94B378E035D70 /* Tipografia.swift in Sources */,
+				7DF82849C1A7B890D2289BE5 /* Calendario.swift in Sources */,
+				34D08A02BDC7B5C7C26D544E /* Formato.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FED5CB284EE89F5EF112D4C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D56D7FB698E7AEAB675FE861 /* RoomieRules */;
+			targetProxy = 43C6A806D74056DD65A862B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43B734984EE9935A0D4BC7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RoomieRules;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.equipo4.RoomieRules;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4A43692AD8BCEEB8B727C85B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DC3EB62E93803B828DC3068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RoomieRules;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.equipo4.RoomieRules;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		80CA38191CCB2D7D5346F042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.equipo4.RoomieRulesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoomieRules.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RoomieRules";
+			};
+			name = Debug;
+		};
+		C28449456A5A705A7479770B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0372B1A1F85EE11C7C93C1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.equipo4.RoomieRulesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoomieRules.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RoomieRules";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F4E3D13C2320EDA50221924 /* Build configuration list for PBXProject "RoomieRules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A43692AD8BCEEB8B727C85B /* Debug */,
+				C28449456A5A705A7479770B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56E03D17FAE325E28D4A421B /* Build configuration list for PBXNativeTarget "RoomieRulesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80CA38191CCB2D7D5346F042 /* Debug */,
+				E0372B1A1F85EE11C7C93C1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4195C8E0F6B4E458BD6B1A /* Build configuration list for PBXNativeTarget "RoomieRules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B734984EE9935A0D4BC7A6 /* Debug */,
+				6DC3EB62E93803B828DC3068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A49B116DC6F12499F6F6CDCA /* Project object */;
+}
